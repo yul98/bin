@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/base.css">
     <title>Cleverfood</title>
 </head>
 
@@ -14,31 +15,311 @@
         <header class="header">
             <div class="grid">
                 <nav class="navbar">
-                    <div class="brand">
+                    <div class="navbar__brand">
                        <a href="#">Cleverfood</a> 
                     </div>
-                    <ul class="navbar-list">
-                        <li class="navbar-item">Trang chủ</li>
-                        <li class="navbar-item">Giới thiệu</li>
-                        <li class="navbar-item">Cửa hàng</li>
-                        <li class="navbar-item">Kiến thức</li>
-                        <li class="navbar-item">Liên hệ</li>
+                    <ul class="navbar__list">
+                        <li class="navbar__list navbar__list__item--active"><a href="#">Trang chủ</a></li>
+                        <li class="navbar__list navbar__list__item"><a href="#">Giới thiệu</a></li>
+                        <li class="navbar__list navbar__list__item">
+                            <div class="dropdown">
+                                <div class="dropbtn"><a href="#">Cửa hàng</a></div>
+                                    <i class="dropdown__icon"></i>
+                                <div class="dropdown__content">
+                                    <a href="#">Rau củ</a>
+                                    <a href="#">Trái cây</a>
+                                    <a href="#">Đồ uống</a>
+                                    <a href="#">Đồ khô</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__list navbar__list__item"><a href="#">Kiến thức</a></li>
+                        <li class="navbar__list navbar__list__item"><a href="#">Liên hệ</a></li>
                     </ul>
-                    <div class="navbar-search">
+                    <div class="navbar__search">
                         <input type="text" placeholder="Tìm kiếm"/>
                     </div>
                 </nav>
             </div>
         </header>
-
-        <div class="container">
+    <!-- Hero Section -->
+        <div class="hero__container">
             <div class="hero">
-                <h1>Apple Juice <span></span></h1>
-                <h1>100% tự nhiên <span></span></h1>
-                <h1>Giảm giá khi đặt mua ngay hôm nay<span></span></h1>
-                <a href="#" class="cta">Mua ngay</a>
+                <div class="hero__title">
+                    <div>
+                        <h1>Apple Juice </h1>
+                        <h1>100% tự nhiên </h1>
+                        <h1>Giảm giá khi đặt mua ngay hôm nay </h1>
+                        <a href="#" class="cta">Mua ngay</a>
+                    </div>
+                </div>
+                <div class="hero__img">
+                    <img src="./assets/css/img/hero-img.png" alt="img">
+                </div>
             </div>
         </div>
+    <!--End Hero Setion -->
+
+    <!--Product section-->
+        <div class="product__container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-6">
+                        <div class="product__img">
+                            <img src="./assets/css/img/product1.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="grid__column-6">
+                        <div class="product__img">
+                            <img src="./assets/css/img/product2.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="grid__column-6">
+                        <div class="product__img">
+                            <img src="./assets/css/img/product3.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="grid__column-6">
+                        <div class="product__img">
+                            <img src="./assets/css/img/product4.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--End Product section-->
+    
+    <!-- Feature Section -->
+        <div class="feature">
+            <div class="feature__top">
+                <h1>Sản phẩm nổi bật</h1>
+            </div>
+            <div class="feature__fix" style="display:block; height:auto; padding-top:20px;"></div>
+            <div class="feature__nav">
+                <ul>
+                    <li class="feature__nav__title-active"><a href="#"><span>Mới nhất</span></a></li>
+                    <li class="feature__nav__title"><a href="#"><span>Giảm giá</span></a></li>
+                    <li class="feature__nav__title"><a href="#"><span>Bán chạy</span></a></li>
+                </ul>
+            </div>
+            <div class="feature-bottom">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/f1.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Dứa (thơm)</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>150 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/f2.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Ớt</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>250 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/dao.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Đào</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>170 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/f4.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Dưa leo</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>220 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/f5.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Dưa leo</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>220 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/f6.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Dưa leo</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>220 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/f7.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Dưa leo</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>220 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img src="./assets/css/img/f8.jpg" alt="img">
+                                </div>
+                                <div class="feature__title">
+                                    <div class="feature__name">
+                                        <a href="#">Dưa leo</a>
+                                    </div>
+                                    <div class="feature__price">
+                                        <span>220 000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End Feature Section -->
+
+    <!-- Sale Section -->
+        <div class="sale">
+            <div class="sale__title">
+                <h1>Khuyến Mãi Trong Tuần</h1>
+                <p>Cơ hội để gia đình bạn sở hữu những sản phẩm ưu đãi</p>
+            </div>
+            <div class="sale__img">
+                <div class="grid">
+                    <div class="sale__top">
+                        <div class="grid__row">
+                            <div class="grid__column-3">
+                                <div class="sale__content">
+                                    <div class="sale__photo">
+                                        <img src="./assets/css/img/f1.jpg" alt="img">
+                                    </div>
+                                    <div class="sale__text">
+                                        <div class="sale__name">
+                                            <a href="#">Dứa (thơm)</a>
+                                        </div>
+                                        <div class="sale__price">
+                                            <span>150 000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-3">
+                                <div class="sale__content">
+                                    <div class="sale__photo">
+                                        <img src="./assets/css/img/f2.jpg" alt="img">
+                                    </div>
+                                    <div class="sale__text">
+                                        <div class="sale__name">
+                                            <a href="#">Ớt</a>
+                                        </div>
+                                        <div class="sale__price">
+                                            <span>250 000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-3">
+                                <div class="sale__content">
+                                    <div class="sale__photo">
+                                        <img src="./assets/css/img/dao.jpg" alt="img">
+                                    </div>
+                                    <div class="sale__text">
+                                        <div class="sale__name">
+                                            <a href="#">Đào</a>
+                                        </div>
+                                        <div class="sale__price">
+                                            <span>170 000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-3">
+                                <div class="sale__content">
+                                    <div class="sale__photo">
+                                        <img src="./assets/css/img/f4.jpg" alt="img">
+                                    </div>
+                                    <div class="sale__text">
+                                        <div class="sale__name">
+                                            <a href="#">Dưa leo</a>
+                                        </div>
+                                        <div class="sale__price">
+                                            <span>220 000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sale__bottom">
+                        <div class="grid__row">
+                            <div class="sale__bottom__img">
+                                <div class="grid__column-4">
+                                    <img class="sale__bottom__img-1" src="./assets/css/img/sale pd1.jpg" alt="img">
+                                    <img class="sale__bottom__img-2" src="./assets/css/img/sale pd2.jpg" alt="img">
+                                    <img class="sale__bottom__img-3" src="./assets/css/img/sale pd3.jpg" alt="img">
+                                    <img class="sale__bottom__img-4" src="./assets/css/img/sale pd4.jpg" alt="img">
+                                    <img class="sale__bottom__img-5" src="./assets/css/img/sale pd6.jpg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End Sale Section -->
         <footer class="footer">
 
         </footer>
