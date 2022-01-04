@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <title>Cleverfood</title>
 </head>
 
@@ -15,29 +16,64 @@
         <header class="header">
             <div class="grid">
                 <nav class="navbar">
+                    <label for="hamburger__mobile-input" class="hamburger-btn">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                    </label>
                     <div class="navbar__brand">
                        <a href="#">Cleverfood</a> 
                     </div>
-                    <ul class="navbar__list">
-                        <li class="navbar__list navbar__list__item--active"><a href="#">Trang chủ</a></li>
-                        <li class="navbar__list navbar__list__item"><a href="#">Giới thiệu</a></li>
-                        <li class="navbar__list navbar__list__item">
-                            <div class="dropdown">
-                                <div class="dropbtn"><a href="#">Cửa hàng</a></div>
-                                    <i class="dropdown__icon"></i>
-                                <div class="dropdown__content">
-                                    <a href="#">Rau củ</a>
-                                    <a href="#">Trái cây</a>
-                                    <a href="#">Đồ uống</a>
-                                    <a href="#">Đồ khô</a>
+                    <div class="hamburger__pc">
+                        <ul class="navbar__list">
+                            <li class="navbar__list navbar__list__item--active"><a href="#">Trang chủ</a></li>
+                            <li class="navbar__list navbar__list__item"><a href="#">Giới thiệu</a></li>
+                            <li class="navbar__list navbar__list__item">
+                                <div class="dropdown">
+                                    <div class="dropbtn"><a href="#">
+                                        Cửa hàng
+                                        <i class="navbar-arrow-down ti-angle-down"></i>
+                                    </a></div>
+                                    <div class="dropdown__content">
+                                        <a href="#">Rau củ</a>
+                                        <a href="#">Trái cây</a>
+                                        <a href="#">Đồ uống</a>
+                                        <a href="#">Đồ khô</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="navbar__list navbar__list__item"><a href="#">Kiến thức</a></li>
-                        <li class="navbar__list navbar__list__item"><a href="#">Liên hệ</a></li>
-                    </ul>
-                    <div class="navbar__search">
-                        <input type="text" placeholder="Tìm kiếm"/>
+                            </li>
+                            <li class="navbar__list navbar__list__item"><a href="#">Kiến thức</a></li>
+                            <li class="navbar__list navbar__list__item"><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" hidden name="" class="hamburger__input" id="hamburger__mobile-input">
+                    <label for="hamburger__mobile-input" class="hamburger__overlay"> 
+                        <label for="hamburger__mobile-input" class="hamburger__mobile-close">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                        </label>
+                    </label>
+                    <div class="hamburger__mobile">
+                        <ul class="navbar__mobile__list">
+                            <li class="navbar__mobile__list__item"><a href="#">Trang chủ</a></li>
+                            <li class="navbar__mobile__list__item"><a href="#">Giới thiệu</a></li>
+                            <li class="navbar__mobile__list__item">
+                                <div class="dropdown__mobile">
+                                    <div class="dropbtn__mobile"><a href="#">
+                                        Cửa hàng
+                                        <i class="navbar__mobile-arrow-down ti-angle-down"></i>
+                                    </a></div>
+                                    <div class="dropdown__mobile__content">
+                                        <a href="#">Rau củ</a>
+                                        <a href="#">Trái cây</a>
+                                        <a href="#">Đồ uống</a>
+                                        <a href="#">Đồ khô</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar__mobile__list__item"><a href="#">Kiến thức</a></li>
+                            <li class="navbar__mobile__list__item"><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav__search-btn">
+                        <i class="nav__search-icon ti-search"></i>
                     </div>
                 </nav>
             </div>
@@ -320,9 +356,81 @@
             </div>
         </div>
     <!-- End Sale Section -->
-        <footer class="footer">
 
+    <!-- Email Section -->
+         <div class="email">
+             <h1>Đăng ký để nhận cập nhật</h1>
+             <span>Để lại email để không bỏ lỡ bất kỳ email nào</span>
+             <div class="email__form">
+                 <input type="text" placeholder="Email..." />
+                 <input type="submit" id="btnSubmit" value="Đăng ký" />
+             </div>
+         </div>
+    <!-- End Email Section -->
+
+    <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer__layout"></div>
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-5">
+                        <div class="footer__info">
+                            <div class="footer__info__logo">
+                                <img src="./assets/css/img/logo-new.png" alt="img">
+                            </div>
+                            <div class="footer__info__title">
+                                <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                                <a href="#">076 922 0162</a> <br>
+                                <a href="#">demonhunterg@gmail.com</a> <br>
+                                <a href="#">mon@mona.media</a> <br>
+                                <a href="#">demonhunterp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-5">
+                        <div class="footer__layouts"></div>
+                        <div class="footer__menu">
+                            <h3>Menu</h3>
+                            <ul>
+                                <li><a class="footer__menu-active" href="#">Trang chủ</a></li>
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Cửa hàng</a></li>
+                                <li><a href="#">Kiến thức</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-5">
+                        <div class="footer__layouts"></div>
+                        <div class="footer__menu">
+                            <h3>Sản phẩm</h3>
+                            <ul>
+                                <li><a href="#">Rau củ</a></li>
+                                <li><a href="#">Trái cây</a></li>
+                                <li><a href="#">Đồ uống</a></li>
+                                <li><a href="#">Đồ khô</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-5">
+                        <div class="footer__layouts"></div>
+                        <div class="footer__menu">
+                            <h3>Instagram</h3>
+                            <div class="instagram__info">
+                                <p>Unable to communicate with Instagram.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
+    <!-- End Footer Section -->
+
+    <!-- Copyright -->
+        <div class="copyright">
+            <p>© Bản quyền thuộc về. Thiết kế website <strong><a href ="#">Yuri</a></strong></a></p>
+        </div>
+    <!-- End Copyright-->
     </div>
 </body>
 </html>
