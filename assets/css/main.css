@@ -337,6 +337,7 @@
     height: 420px;
     background-size: cover;
     text-align: center;
+    width: 100%;
 
 }
 .sale__title h1 {
@@ -457,34 +458,35 @@
 
 /* Footer */
 .footer {
-    height: 340px;
-    
+    padding-bottom: 60px;
+    padding-top: 35px;
+  
 }
 .footer__layout {
     display: block;
     height: auto;
-    padding-top: 30px;
+    padding-top: 10px 0 0;
 }
 .footer__info {
     padding-left: 50px;
 }
 .footer__info__logo img {
-    width: 40%;
+    max-width: 40%;
     height: auto;
-    padding-top: 0px;
-    margin-left: -30px;
 }
 .footer__info__title {
     font-size: 1.4rem;
     color:rgba(102,102,102,0.85);
-    padding: 0;
+    padding-left: 30px;
     line-height: 1.6;
 }
 .footer__info__title p {
     margin-bottom: 0;
+    display: inline-block;
 }
 .footer__info__title a {
     color:rgba(102,102,102,0.85);
+    display: flex;
 }
 .footer__info__title a:hover {
     color:rgb(134, 186, 9);
@@ -492,17 +494,16 @@
 .footer__layouts {
     display: block;
     height: auto;
-    padding-bottom: 40px;
+    padding-top: 20px 0 0;
 }
 .footer__menu {
-    margin-left: -80px;
-    padding-right: 150px;
-    padding-top: 5px;
+    padding-right: 70px;
+    
 }
 .footer__menu h3 {
     text-transform: uppercase;
-    font-size: 2.2rem;
-    font-weight: 545;
+    font-size: 2rem;
+    font-weight: 550;
     color: #353535;
 }
 .footer__menu a {

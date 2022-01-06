@@ -76,7 +76,7 @@ a {
 
 /* Media query for tablet & mobile */
 @media only screen and (max-width: 1023px) {
-    /* header */
+    /* Header section */
     .hamburger-btn {
         display: block;
         margin-left: 30px;
@@ -84,12 +84,16 @@ a {
     .navbar__list {
         display: none;
     }
-    .navbar__brand a {
-        font-size: ;
-    }
     .nav__search-btn {
         padding-right: 40px;
     }
+    /* End Header section */
+
+    /* Footer section */
+    .footer__menu-instagram {
+        display: none;
+    }
+    /* End Footer section/
 }
 /* Media query for tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -97,7 +101,37 @@ a {
     .grid__column-3 {
         width: 33.33%;
     }
+    .feature-bottom {
+        padding-left: 25px;
+    }
     /* End Feature section */
+
+    /* Sale section */
+    .sale__content-4 {
+        display: none;
+    }
+    .sale {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* End Sale section */
+
+    /* Email section */
+    .email__form input[type='text'] {
+        margin-left: 150px;
+    }
+    .email__form input[type='submit'] {
+        margin-right: 150px;
+    }
+    /* End Email section */
+
+    /* Footer section */
+    .footer__menu-list {
+        margin-left: -100px;
+        padding-right: 20px;
+    }
+     
+    /* End Footer section */
 }
 /*  Media query for mobile */
 @media only screen and (max-width: 321px) {
@@ -136,5 +170,46 @@ a {
     .feature__nav {
         flex-wrap: wrap;
     }
+    .feature__nav__title-active a {
+        margin-bottom: 20px;
+        display: block;  
+    }
     /* End Feature section */
+
+    /* Sale section */
+    .sale__content-3 {
+        display: none;
+    }
+    .sale__content-4 {
+        display: none;
+    }
+    .sale__bottom__img-1 {
+        display: none
+    }
+    .sale__bottom__img-3 {
+        display: none
+    }
+    .sale__bottom__img-4 {
+        display: none
+    }
+    .sale__bottom__img-5 {
+        display: none
+    }
+    /* End Sale section */
+
+     /* Email section */
+     .email__form {
+         padding-left: 10px;
+     }
+    /* End Email section */
+
+     /* Footer section */
+     .footer__menu-list {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer_info__title {
+        margin-left: 0;
+    }
+    /* End Footer section */
 }
